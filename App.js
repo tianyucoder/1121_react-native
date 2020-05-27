@@ -5,14 +5,14 @@ import {
 	StatusBar, //状态栏
 	//Text //专门用于呈现文字的组件
 } from 'react-native';
-import Demo from './components/11_Swiper/MySwiper'
+import Demo from './components/13_FlatList_test/MyFlatListTest'
 
 export default class App extends Component{
 	render(){
 		return (
 			<>
 				<StatusBar barStyle="dark-content"/>
-				<SafeAreaView style={{flex:1,backgroundColor:'skyblue'}}>
+				<SafeAreaView style={{flex:1}}>
 					<Demo/>
 				</SafeAreaView>
 			</>
