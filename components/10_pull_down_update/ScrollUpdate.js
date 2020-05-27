@@ -19,13 +19,13 @@ export default class MyScroll extends Component {
 	}
 
 	render() {
-		console.log(this.state.news);
 		return (
 			<ScrollView
 				refreshControl={
 					<RefreshControl
             refreshing={this.state.isLoading}//是否展示loading图标
-            onRefresh={this.handleRefresh}//真正用于执行刷新的函数
+						onRefresh={this.handleRefresh}//真正用于执行刷新的函数
+						colors={['red','blue','yellow']} //加载条的颜色
           />
 				}
 				style={{flex:1}}

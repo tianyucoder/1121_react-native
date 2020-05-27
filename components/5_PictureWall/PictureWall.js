@@ -11,7 +11,7 @@ export default class PictureWall extends Component {
 	}
 
 	renderItem = ()=>{
-		const {imgs,itemWidth} = this.state //1.获取所有图片的个数、每个图片的宽度
+		const {imgs,itemWidth} = this.state //获取所有图片的个数、每个图片的宽度
 		const currentWidth = Dimensions.get('window').width //当前屏幕的宽度
 		const oneRowCount = Math.floor(currentWidth/itemWidth)//一行能展示几个
 		const rows = Math.ceil(imgs.length / oneRowCount) //一共需要多少行
