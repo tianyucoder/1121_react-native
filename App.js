@@ -5,7 +5,7 @@ import {
 	StatusBar, //状态栏
 	//Text //专门用于呈现文字的组件
 } from 'react-native';
-import MyText from './components/2_Text/Text'
+import Demo from './components/4_Image/MyImage'
 
 export default class App extends Component{
 	render(){
@@ -13,7 +13,7 @@ export default class App extends Component{
 			<>
 				<StatusBar barStyle="dark-content"/>
 				<SafeAreaView style={{flex:1,backgroundColor:'skyblue'}}>
-					<MyText/>
+					<Demo/>
 				</SafeAreaView>
 			</>
 		)
