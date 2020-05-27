@@ -5,7 +5,7 @@ import {
 	StatusBar, //状态栏
 	//Text //专门用于呈现文字的组件
 } from 'react-native';
-import Demo from './components/15_SectionList_test/CarList'
+import Demo from './components/16_axios/CarList'
 
 export default class App extends Component{
 	render(){
