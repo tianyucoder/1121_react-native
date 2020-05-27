@@ -5,15 +5,15 @@ import {
 	StatusBar, //状态栏
 	//Text //专门用于呈现文字的组件
 } from 'react-native';
-import Text from './components/2_Text/Text'
+import MyText from './components/2_Text/Text'
 
 export default class App extends Component{
 	render(){
 		return (
 			<>
-				<StatusBar barStyle="light-content" />
-				<SafeAreaView style={{flex:1}}>
-					<Text/>
+				<StatusBar barStyle="dark-content"/>
+				<SafeAreaView style={{flex:1,backgroundColor:'skyblue'}}>
+					<MyText/>
 				</SafeAreaView>
 			</>
 		)
