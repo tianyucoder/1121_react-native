@@ -1,17 +1,18 @@
 import React, { Component } from 'react'
 import { Text, View,Image,StyleSheet,Dimensions } from 'react-native'
-import frontEnd from '../../assets/json/front_end.json'
+// from '../../assets/json/x.json'
 
 export default class PictureWall extends Component {
 
 	state = {
-		itemWidth:100,
-		itemHeight:150,
-		imgs:frontEnd
+		itemWidth:120,
+		itemHeight:80,
+		//imgs:frontEnd
 	}
 
 	renderItem = ()=>{
-		const {imgs,itemWidth} = this.state //获取所有图片的个数、每个图片的宽度
+		const {itemWidth} = this.state //获取所有图片的个数、每个图片的宽度
+		const imgs = this.props.data
 		const currentWidth = Dimensions.get('window').width //当前屏幕的宽度
 		const oneRowCount = Math.floor(currentWidth/itemWidth)//一行能展示几个
 		const rows = Math.ceil(imgs.length / oneRowCount) //一共需要多少行
@@ -25,7 +26,7 @@ export default class PictureWall extends Component {
 				<Image 
 					key={index} 
 					resizeMode="contain"
-					style={{width:this.state.itemWidth,height:this.state.itemHeight,backgroundColor:'pink',marginBottom:5}} 
+					style={{width:this.state.itemWidth,height:this.state.itemHeight,marginBottom:5}} 
 					source={{uri:item.url}}
 				/>
 			)
@@ -35,7 +36,6 @@ export default class PictureWall extends Component {
 
 	render() {
 		const {imgContainer} =  PictureWallStyle
-		console.log(frontEnd);
 		return (
 			<View style = {imgContainer}>
 				{this.renderItem()}
