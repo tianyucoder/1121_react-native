@@ -1,0 +1,10 @@
+分析工程结构：
+		分析文件：
+			----.buckconfig:打包IOS项目
+			----.flowconfig: Facebook 旗下一个为 JavaScript 进行静态类型检测的检测工具。
+						     它可以在 JavaScript 的项目中用来捕获常见的 bugs，比如隐式类型转换，空引用等等。
+			----.gitattributes:text:标记为文本文件，并进行行尾规范化。   -text标记为非文本文件
+			---- metro.config.js：facebook出品，专为RN服务的一个模块打包器
+			----.watchmanconfig：watchman用于监控文件变化，辅助实现工程修改所见即所得
+			----.prettierrc.js：用来格式化代码的配置		
+		分析：index.js、App.js结构
